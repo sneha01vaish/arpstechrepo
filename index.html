@@ -23,63 +23,43 @@
     </head>
 
     <body>
-        <header id="header">
-            <div class="container header-container">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/ARPStechlogo.jpg" alt="Logo" />
-                    </a>
-                    <span class="company-name"
-                        >ARPS<span class="company-blog">Tech</span></span
-                    >
+        <header>
+            <nav class="navbar">
+                <div class="navbar-left">
+                    <div class="logo">
+                        <img
+                            src="images/ARPStechlogo.jpg"
+                            alt="Spark of Ark Logo"
+                        />
+                    </div>
+                    <h1>SPARK OF ARK</h1>
                 </div>
 
-                <!-- Hamburger icon -->
-                <div class="menu-icon" id="menu-icon">☰</div>
+                <ul class="nav-links" id="navLinks">
+                    <li>
+                        <a href="#">What We Do</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">App Development</a></li>
+                            <li><a href="#">Digital Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">What We Think</a></li>
+                    <li>
+                        <a href="#">About Spark</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Leadership</a></li>
+                            <li><a href="#">Investors</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><div class="language-selector">🌐 EN ▼</div></li>
+                </ul>
 
-                <!-- Navigation -->
-                <nav class="nav-links" id="nav-links">
-                    <div class="close-icon" id="close-icon">✖</div>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li>
-                            <a
-                                target="_blank"
-                                href="https://iviphealth.com/what-is-vip-health"
-                                >About</a
-                            >
-                        </li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li class="services">
-                            <a href="#" class="service-list">Services</a>
-                            <ul class="submenu">
-                                <li>
-                                    <a
-                                        target="_blank"
-                                        href="https://app.aegiscare.io/signup"
-                                        >Web Development</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        target="_blank"
-                                        href="https://iviphealth.com/online-application/start"
-                                        >UI Design</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        target="_blank"
-                                        href="https://iviphealth.com/online-application/start"
-                                        >Android Development</a
-                                    >
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="project.html">Projects</a></li>
-                    </ul>
-                </nav>
-            </div>
+                <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            </nav>
         </header>
 
         <section class="home">
@@ -149,11 +129,11 @@
         </section>
 
         <footer>
-            <div class="container text-center responsive-footer">
+            <div class="container text-center responsive_copyright">
                 <p class="responsive-footer">
                     <a href="mailto:info@aegiscare.io">keshavbhardwaj.io</a>
                     <a href="privacypolicy.html">Privacy Policy</a>
-                    <a href="termsofservice.html">Terms of Service</a> 
+                    <a href="termsofservice.html">Terms of Service</a>
                     <a href="fulfillment.html">Cancellation and Refunds</a>
                 </p>
                 <p>&copy; 2025 by ARPS Tech</p>
